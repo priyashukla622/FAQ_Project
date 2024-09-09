@@ -8,12 +8,16 @@ body{
 }
 .accordian{
     background-color: white;
+    font-size: 35px;
     padding:4px 16px;
     margin-bottom: 16px;
     border-radius: 4px;
     box-shadow: 1px 1px 5px rgb(255, 205,255) ;
     cursor: pointer;
 
+}
+h2{
+    font-size: 50px;
 }
 .question{
     display: flex;
@@ -36,6 +40,12 @@ body{
     overflow: hidden;
     transition: max-height 0.2s;
 }
-/* .answer .active{
-    max-height: fit-content;
-} */
+@media(max-width:700px){
+    .accordian{
+        font-size: 25px;
+    }
+    h2{
+        margin-left: 40px;
+    }
+
+}
