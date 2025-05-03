@@ -24,11 +24,6 @@ h2{
 .question h4{
     font-size: 19px;
 }
-.icon{
-    margin-right: 10px;
-    font-size: 20px;
-    transition: transform 0.2s;
-}
 .icon .active{
     transform: rotate(-180deg);
 }
@@ -39,6 +34,19 @@ h2{
     overflow: hidden;
     transition: max-height 0.2s;
 }
+
+
+.icon {
+    display: inline-block;
+    font-size: 20px;
+    transition: transform 0.3s ease;
+    transform: rotate(0deg); 
+}
+
+.icon.active {
+    transform: rotate(180deg); 
+}
+
 @media(max-width:700px){
     .accordian{
         font-size: 25px;

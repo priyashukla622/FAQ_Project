@@ -1,28 +1,18 @@
-
 const accordians = document.querySelectorAll(".accordian");
 accordians.forEach(accordian => {
-document.body.addEventListener("click", (event) => {
-    const accordion = event.target.closest(".accordian");
-    if (accordion) {
-        const icon = accordion.querySelector(".icon");
-        const answer = accordion.querySelector(".answer");
+    accordian.addEventListener("click", (event) => {
+        const icon = accordian.querySelector(".icon");
+        const answer = accordian.querySelector(".answer");
 
         icon.classList.toggle("active");
 
         if (icon.classList.contains("active")) {
-            answer.style.maxHeight = null;
+            answer.style.maxHeight = answer.scrollHeight + "px"; 
         } else {
-            answer.style.maxHeight = answer.scrollHeight + "px";
+            answer.style.maxHeight = null;
         }
-    }
+    });
 });
-
-
-});
-
-
-
-
 
 
 
