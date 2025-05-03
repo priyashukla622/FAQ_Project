@@ -3,7 +3,6 @@ const accordians = document.querySelectorAll(".accordian");
 accordians.forEach(accordian => {
 document.body.addEventListener("click", (event) => {
     const accordion = event.target.closest(".accordian");
-
     if (accordion) {
         const icon = accordion.querySelector(".icon");
         const answer = accordion.querySelector(".answer");
